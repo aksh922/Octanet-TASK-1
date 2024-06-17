@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+html.body{
+    width: 100%;
+    height: 100%;
+}
+main{
+    width: 100%;
+    height: 100vh;
+}
+.top{
+    width: 100;
+    min-height: 60vh;
+    background-image: url(https://grants.gettyimages.com/images/grants/GettyImages-1229275252.png);
+    background-size: cover;
+    background-position: center;
+}
+.top .overlay{
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(97, 122, 142, 0.238);
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 10vh;
+    color: azure;
+    bottom: 5%;
+}
+.text h1{
+    font-weight: 600;
+    font-size: 4vw;
+}
+.text .image{
+    background-image: url(https://thetrendyart.com/cdn/shop/products/abstract-face-minimalist-wall-art-571062_5000x.webp?v=1689278918);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 220px;
+}
+.rtext{
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-between;
+}
+.rtext p{
+    font-size: 18px;
+}
+.bottom{
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+}
+.b1{
+    width: 30%;
+    min-height: inherit;
+    background-image: url(https://lh3.googleusercontent.com/69YSxWj0ltZDrvBClGrHj-y1y07i4n1BSSLdz5fyEOOpoLlGTKuOnAZU9gcpPuCSrwDfaWkxFkIGb6t7bRpfagIQH4HIblvXjO-pHjlbShMS8JE=nu-e365-rj-q80-w925);
+    background-size: cover;
+    background-position: center;
+}
+.b1 h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 13px;
+}
+.b1 p{
+    color: antiquewhite;
+    text-align: center;
+    padding: 120px;
+}
+.b2{
+    width: 30%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+.b2 .up{
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://cdn.dribbble.com/users/4815234/screenshots/12275349/media/9f2202900b38074efe6ba425aebe0713.gif?resize=400x0);
+    background-size: cover;
+    background-position: center;
+}
+.b2 .up h1{
+    text-align: center;
+    padding: 30px;
+}
+.b2 .up p{
+    color: rgb(30, 98, 98);
+    text-align: center;
+    padding: 15%;
+}
+.b2 .down{
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://qph.cf2.quoracdn.net/main-qimg-80fc4dfc90bc4de547ec0229e26b5ffc-pjlq);
+    background-size: cover;
+    background-position: center;
+}
+.b2 .down .overlay{
+    position: relative;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.138);
+}
+.b2 .down h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 70px;
+}
+.b3{
+    width: 40%;
+    min-height: inherit;
+    background-image: url(https://img.freepik.com/premium-photo/there-is-whale-that-is-floating-sky-with-clouds-generative-ai_958165-43075.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.b3 .overlay{
+    justify-content: right;
+    position: relative;
+    width: 20%;
+    height: 100%;
+    padding: 2vw 4vh;
+}
+.b3 .overlay p{
+    padding: 3vh;
+}
+
+@media(max-width:700px){
+    .rtext{
+        flex-direction: column;
+    }
+    .b3 .overlay{
+        width: 100%;
+        margin-left: initial;
+    }
+}
+
+@media(max-width:500px){
+    .text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .text h1{
+        font-size: 5vh;
+    }
+    .text .image{
+        height: 200px;
+        width: 140px;
+        margin-top: 20px;
+    }
+    .rtext{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rtext p{
+        margin-top: 10px;
+    }
+    .icons{
+        margin-top: 10px;
+    }
+    .bottom{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .b1{
+        width: 100%;
+        min-height: 30vh;
+    }
+    .b2{
+        width: 100%;
+    }
+    .b2 .up{
+        min-height: 30vh;
+    }
+    .b3{
+        width: 100%;
+        min-height: 30vh;
+        background-position: left;
+    }
+}
